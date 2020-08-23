@@ -1,0 +1,416 @@
+@font-face { 
+  font-family: 'ProductSans';
+  src: url('fonts/Product_Sans_Regular.woff') format('woff');
+}
+
+body, html{
+  padding: 0;
+  margin: 0;
+  font-family: 'ProductSans';
+  height: 100vh;
+}
+
+/* Login form */
+
+/* Container Login Form */
+.container-form{
+  width: 60%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-form-login{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.formLogin table{
+  width: 450px;
+  height: 300px;
+  border: 1px solid #d4d4d4;
+  padding: 25px 20px;
+  font-size: 18px;
+}
+.formLogin table thead tr th{
+  font-size: 32px;
+}
+
+
+/* Message Area */
+.message{
+  width: 100%;
+  text-align: center;
+  padding: 12px 20px;
+  margin: -10px 0 12px;
+  box-sizing: border-box;
+}
+.message-danger{
+  color:#721c24;
+  background-color:#f8d7da;
+  border-color:#f5c6cb;
+}
+.message-warning{
+  color:#856404;
+  background-color:#fff3cd;
+  border-color:#ffeeba;
+}
+.message-success{
+  color:#155724;
+  background-color:#d4edda;
+  border-color:#c3e6cb;
+}
+
+/* Input Area */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Button Area */
+.formLogin table button{
+  border: 1px solid rgb(100, 100, 223);
+  float: right;
+  width: 20%;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: rgb(132, 132, 243);
+  color: rgb(234, 234, 234);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.formLogin table button:hover{
+  background-color: rgb(113, 113, 250);
+}
+
+
+/* Dynamic Template page */
+.container{
+  display: flex;
+  height: 100%;
+  min-height: 813px;
+}
+
+/* Left Side */
+.container .left-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  min-width: 170px;
+  box-sizing: border-box;
+  background-color: rgb(100, 100, 223)  ;
+  background-image: linear-gradient(180deg, rgb(157, 157, 255) ,rgb(55, 55, 148) 100%);
+  background-size: cover;
+  justify-content: start;
+}
+.container .left-sidebar .logo{
+  text-align: center;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  height: 133px;
+  font-size: 30px;
+  color: white;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+}
+.container .left-sidebar ul{
+  padding: 30px 20px;
+  list-style: none;
+  text-align: center;
+  line-height: 40px;
+}
+.container .left-sidebar ul li a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white; 
+}
+.container .left-sidebar ul li a:hover{
+  color: rgb(157, 157, 255); 
+}
+.container .left-sidebar .logout{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .left-sidebar .logout a{
+  height: 41px;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  background-color: rgb(132, 132, 243);
+  color: white;
+  border: 1px solid rgb(100, 100, 223);
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.container .left-sidebar .logout a:hover{
+  background-color: rgb(113, 113, 250); 
+}
+
+/* Right Side */
+.container .right-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  width: 85%;
+  min-width: 945px;
+  height: 100%;
+}
+.container .right-side .topbar{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  box-sizing: border-box;
+  border-left: 1px solid grey;
+  z-index: 2;
+}
+.container .right-side .topbar h1{
+  font-size: 36px;
+}
+.container .right-side .topbar .searchbar{
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.container .right-side .topbar .searchbar form{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.container .right-side .topbar .searchbar form input[type='text']{
+  width: 400px;
+}
+.container .right-side .topbar .searchbar form button{
+  height: 41px;
+  padding: 12px 20px;
+  margin: 10px 0 10px 20px;
+  background-color: rgb(132, 132, 243);
+  color: white;
+  border: 1px solid rgb(100, 100, 223);
+  box-sizing: border-box;
+}
+.container .right-side .topbar .searchbar form button:hover{
+  background-color: rgb(113, 113, 250); 
+}
+
+/* VIEW */
+.container .right-side .content{
+  background-color: #f8f9fc;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  border-left: 1px solid grey;
+}
+.container .right-side .content .tView{
+  border-collapse: collapse;
+  width: 100%;  
+}
+.container .right-side .content .tView th{
+  background-color: rgb(100, 100, 223);
+  color: white;
+  letter-spacing: 1.2px;
+}
+.container .right-side .content .tView,.container .right-side .content .tView th, .container .right-side .content .tView td{
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+.container .right-side .content .tView th, .container .right-side .content .tView td{
+  text-align: left;
+  padding: 10px;
+}
+.container .right-side .content .tView td a{
+  text-decoration: none;
+  color: rgb(132, 132, 243);
+}
+.container .right-side .content .tView td a:hover{
+  color: rgb(100, 100, 223);
+}
+.container .right-side .content #linkAdd, .container .right-side .content #linkView{
+  background-color: rgb(157, 157, 255);
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid rgb(136, 136, 255);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.container .right-side .content #linkAdd:hover, .container .right-side .content #linkView:hover{
+  background-color: rgb(144, 144, 230);
+  cursor: pointer;
+}
+.container .right-side .content .tView #eLink, .container .right-side .content .tView #dLink{
+  display: inline-block;
+  width: 100px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  color: white; 
+}
+.container .right-side .content .tView #eLink{
+  color:#155724;
+  background-color:#d4edda;
+  border-color:#c3e6cb;
+}
+.container .right-side .content .tView #dLink{
+  color:#721c24;
+  background-color:#f8d7da;
+  border-color:#f5c6cb;
+}
+.container .right-side .content .tView #eLink:hover{
+  background-color:#71db8a;
+}
+.container .right-side .content .tView #dLink:hover{
+  background-color:#db7171;
+}
+
+/* Add */
+.container .right-side .content #fAdd .tAdd{
+  width: 100%;
+  text-align: left;
+}
+.container .right-side .content #fAdd .tAdd tr td input[type=text], .container .right-side .content #fAdd .tAdd tr td textarea{
+  width: 90%;
+}
+.container .right-side .content #fAdd .tAdd tr td select, .container .right-side .content #fAdd .tAdd tr td input[type=file]{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box; ;
+}
+.container .right-side .content #fAdd .tAdd tr th button{
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  color:#155724;
+  background-color:#d4edda;
+  border-color:#c3e6cb;
+  font-size: 20px;
+}
+
+/* UPDATE */
+.container .right-side .content #fEdit .tEdit{
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+.container .right-side .content #fEdit .tEdit tr td input[type=text], .container .right-side .content #fEdit .tEdit tr td textarea{
+  width: 90%;
+}
+.container .right-side .content #fEdit .tEdit tr td select, .container .right-side .content #fEdit .tEdit tr td input[type=file]{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box; ;
+}
+.container .right-side .content #fEdit .tEdit tr th button{
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  color:#155724;
+  background-color:#d4edda;
+  border-color:#c3e6cb;
+  font-size: 20px;
+}
+.container .right-side .content #fEdit .tEdit tr td textarea{
+  resize: none;
+  height: 100%;
+}
+.container .right-side .content #fEdit .tEdit tr:nth-child(2) td {
+  width: 40%;
+}
+  .container .right-side .content #fEdit .tEdit tr:nth-child(2) td img{
+  width: 90%;
+}
+
+/* Footer */
+.container .right-side .footer {
+  border-top: 1px solid grey;
+  width: 100%;
+  min-width: 745px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: white;
+  border-left: 1px solid grey;
+}
+
+/* Detail */
+.detailContainer, .detailContainer .description{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.detailContainer .title{
+  width: 100%;
+}
+.detailContainer .data{
+  display: flex;
+  width: 100%;
+}
+.detailContainer .data .thumbnail{
+  width: 40%;
+}
+.detailContainer .data .thumbnail img{
+  width: 100%;
+}
+.detailContainer .data .description{
+  width: 50%;
+  margin-left: 6%;
+  display: flex;
+  justify-content: space-between;
+}
+.detailContainer .data .description .date{
+  font-size: 30px;
+}
+.detailContainer .data .description .detail{
+  font-size: 20px;
+}
+.detailContainer .data .description .posted{
+  text-align: right;
+}
+.container .right-side .topbar, .container .right-side .content, .container .right-side .footer{
+  flex-shrink: 0;
+}
+.container .footer p{
+  font-size: 16px;
+}
